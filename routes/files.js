@@ -121,7 +121,7 @@ router.post('/send', async (req, res) => {
     }).catch(err => {
       return res.status(500).json({error: 'Error in email sending.'});
     });
-} catch(err) {
+} catch(err) { 
   return res.status(500).send({ error: 'Something went wrong.'});
 }
 
